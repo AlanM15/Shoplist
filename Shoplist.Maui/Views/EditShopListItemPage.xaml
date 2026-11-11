@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shoplist.Maui.Views.EditShopListItemPage"
+             Title="Nuevo articulo">
+    <Grid
+        Padding="16,0">
+        <VerticalStackLayout
+            Spacing="8">
+            <Label
+                Text="Articulo a comprar"/>
+            <Entry
+                Placeholder="Ejemplo:Manzanas"
+                BackgroundColor="WhiteSmoke"
+                TextColor="Black"/>
+            <Label
+                Text="Cantidad"/>
+            <Entry
+                Keyboard="Numeric"
+                ClearButtonVisibility="WhileEditing"
+                BackgroundColor="WhiteSmoke"
+                TextColor="Black"/>
+            <HorizontalStackLayout>
+                <CheckBox/>
+                <Label
+                    Text="Comprado"
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <Button
+                Margin="0,24,0,0"
+                Text="Guardar"
+                BackgroundColor="Orange"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
